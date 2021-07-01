@@ -24,20 +24,19 @@
             "id": "ui5template.fiorielements.v4.lrop",
             "version": "1.0.0"
         },
-         "crossNavigation": {
-      "inbounds": {
-        "Risks-display": {
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          },
-          "semanticObject": "Risks",
-          "action": "display"
+        "crossNavigation": {
+            "inbounds": {
+                "Risks-display": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Risks",
+                    "action": "display"
+                }
+            }
         }
-      }
-    }
-         },
-   
+    },
     "sap.ui": {
         "technology": "UI5",
         "icons": {
@@ -145,8 +144,8 @@
         "registrationIds": [],
         "archeType": "transactional"
     },
-  "sap.cloud": {
-    "public": true,
-    "service": "cpapp.service"
-  }
+    "sap.cloud": {
+        "public": true,
+        "service": "cpapp.service"
+    }
 }

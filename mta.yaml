@@ -9,6 +9,7 @@ modules:
   requires:
   - name: cpapp-db
   - name: cpapp-uaa
+  - name: cpapp-logs
   provides:
   - name: srv-api
     properties:
@@ -19,6 +20,7 @@ modules:
   requires:
   - name: cpapp-db
   - name: cpapp-uaa
+  - name: cpapp-logs
   parameters:
     buildpack: nodejs_buildpack
 - name: cpapp-destinations
@@ -154,3 +156,8 @@ build-parameters:
     - npm install --production
     - npx -p @sap/cds-dk cds build --production
     - npx rimraf gen/db/src/gen/data
+- name: cpapp-logs
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: application-logs
+    service-plan: standard

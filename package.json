@@ -17,6 +17,9 @@
     "@sap/ux-specification": "^1.90.2",
     "sqlite3": "^5.0.2"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "start": "cds run"
   },
@@ -56,10 +59,10 @@
       "uaa": {
         "kind": "xsuaa",
         "credentials": {}
+      }
     },
     "hana": {
       "deploy-format": "hdbtable"
     }
   }
-}
 }
